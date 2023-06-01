@@ -1,4 +1,6 @@
 # MushroomClassification
+![image](https://github.com/SurajspatiL99/MushroomClassification/assets/101862962/9b1f2eb1-6a80-44f7-a59f-2a9e68965e5b)
+
 ## Introduction
 The ability to distinguish between edible and poisonous mushrooms is critical for ensuring food safety and preventing health risks. However, this task can be challenging due to the variety of mushroom types and their similar appearances. In this project, we aim to develop a model that can accurately identify whether a mushroom is edible or poisonous. By utilizing various characteristics of mushrooms, we can create a system that will reduce the risk of consuming poisonous mushrooms, thereby promoting safe and healthy consumption. This project has important implications for both the food industry and consumers, as it can help ensure food safety and prevent potentially deadly consequences.
 
@@ -13,18 +15,22 @@ we conducted a range of exploratory data analyses to gain a comprehensive unders
 ### 1)	Null Values: -
 We conducted a test to identify null values in each column of our dataset. The test results showed that four columns contained more than 80% null values. As a result, we made the decision to drop these columns from our dataset, as they would not provide useful information for our model. For the remaining columns with null values, we decided to fill them with an unknown character.
 ![image](https://user-images.githubusercontent.com/101862962/235265805-0cc40e28-8bc7-49c7-8b87-dcf66404ac53.png)
+
 This approach allowed us to preserve the structure of our dataset while also addressing the issue of null values. By identifying and addressing null values in our dataset, we could develop a more robust and accurate model that could provide meaningful insights into our data. The test for null values was a critical step in our data analysis process, as it allowed us to identify and address issues that could impact the accuracy of our model. We believe that ultimately, this will helped us to create a more reliable and useful model that could provide valuable insights into our data.
 
 ### 2)	Test for correlation between three numeric variables: - 
 ![image](https://user-images.githubusercontent.com/101862962/235265824-cd225576-7900-403e-8573-53221384b29e.png)
+
 The heat map provided us with a visual representation of the strength and direction of correlations between variables. Specifically, we observed a correlation of 0.7 between stem width and cap diameter. A correlation of 0.7 suggests a strong positive correlation between the two variables, indicating that as one variable increases, the other variable tends to increase as well. Given this information, we made the decision to drop either stem width or cap diameter from our dataset. Dropping one of these variables can help us to avoid multicollinearity in our model, which can lead to less reliable results. The heat map was a useful tool that allowed us to identify variables that were strongly correlated, enabling us to make informed decisions about which variables to include in our model. Ultimately, this helped us to create a more robust and accurate model that could provide meaningful insights into our data.
 
 ### 3)	Pair to identifying potential patterns: -
  ![image](https://user-images.githubusercontent.com/101862962/235265858-651e57ab-04bd-4cfc-b84f-9ed075e52fda.png)
+ 
 We chose two numeric variables that we believed could have a significant impact on the target variable. To visualize the relationship between these variables, we created a pair plot. The plot displays the two numeric variables on separate axes and shows how the data is clustered by class. The plot enabled us to observe the pattern of the data points and helped us understand the relationship between the variables. From the pair plot, we could see how the data points were clustered and how the two classes were distributed. This visualization provided us with valuable insights that helped us make informed decisions about the variables to include in our model.
 
 ### 4)	Chi-square test to test the independence: -
 ![image](https://user-images.githubusercontent.com/101862962/235265882-a87b0074-3fd5-42c4-9f1e-585420f42ad8.png)
+
 Chi Square test was conducted to understand relationship between target variable and the nominal categorical variable. For Nominal variables, if the p-value is greater than level of significance of 0.05, so we fail to reject the null hypothesis and conclude that we fail to reject the null hypothesis and conclude that there is insufficient evidence to suggest an association between the two variables. In this case, we dropped those variables.
 
   
